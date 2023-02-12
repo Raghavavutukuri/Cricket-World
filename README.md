@@ -1,6 +1,11 @@
 # Cricket-World
 This website shows information about cricket
 
+> # Technologies used
+> #### HTML
+> #### CSS
+> #### JS
+
 ## Slide Show
 ![image](https://user-images.githubusercontent.com/82777393/218333183-9b199cde-7a4c-4e0b-a8ad-e4960aa67a66.png)
 
