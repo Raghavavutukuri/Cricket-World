@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cricket World</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      </style>
+
+  </head>
+  <body>
+    <header>
+      <h1>Cricket World</h1>
+      <div class="nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#teams">Teams</a></li>
+          <li><a href="#players">Players</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="maincontent">
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="assets/cricket1.jpg" style="width:100%; height: 650px">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="assets/cricket2.jpg" style="width:100%; height: 650px;">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="assets/cricket3.jpg" style="width:100%; height: 650px;">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+
+      <section id="about">
+          
+        <div>  
+        <h2>About Cricket</h2>
+        <p align="justify">Cricket is a sport that is played by two teams of 11 players each. It involves hitting a ball with a bat and running
+            around the field to score runs. The game is usually played on a large oval field, with a 22-yard long rectangular
+            pitch in the center. The objective is to score as many runs as possible in a set number of overs. The team that
+            scores the most runs wins the game.</p>
+        </div>
+        <img id="cricket" src="assets/cricket.jpg">
+      </section>
+      <section id="news">
+        <h2>Cricket News</h2>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="assets/cricket5.jfif" alt="Avatar" style="width:100%; border-radius:5px;  height: 200px;">
+              <div class="container">
+                <h4><b><a href="#">India win against Australia in 2nd T20</a></b></h4>
+                <p>An injury-ravaged India beat Australia by three wickets in the series-deciding fourth Test</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="assets/cricket4.jfif" alt="Avatar" style="width:100%; border-radius:5px;  height: 200px;">
+              <div class="container">
+                <h4><b><a href="#">England announces squad for upcoming series</a></b></h4>
+                <p> Thursday, November 10, despite the deadline being three days later on November 13.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="assets/cricket6.jfif" alt="Avatar" style="width:100%; border-radius:5px; height: 200px;">
+              <div class="container">
+                <h4><b><a href="#">IPL Auction: Major transfers and players retained</a></b></h4>
+                <p>The TATA IPL 2023 Player Auction saw a total of 80 players sold and INR 1,67,00,00,000 spent ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img src="assets/cricket7.jfif" alt="Avatar" style="width:100%; border-radius:5px;  height: 200px;">
+              <div class="container">
+                <h4><b><a href="#">England cancel cricket match to spend day at races</a></b></h4>
+                <p>England were originally scheduled to start a second two-day practice match but that was binned ...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="teams">
+        <h2>Top Cricket Teams: ICC Ranking</h2>
+        <table>
+          <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Matches</th>
+            <th>Points</th>
+            <th>Rating</th>
+          </tr>
+          <tr>
+            <td><b>1</b></td>
+            <td><b> Australia</b></td>
+            <td><b>29</b></td>
+            <td><b>3668</b></td>
+            <td><b>126</b></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>India</td>
+            <td>32</td>
+            <td>3690</td>
+            <td>115</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>England</td>
+            <td>47</td>
+            <td>5017</td>
+            <td>107</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>South Africa</td>
+            <td>29</td>
+            <td>2952</td>
+            <td>102</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>New Zealand</td>
+            <td>30</td>
+            <td>2965</td>
+            <td>99</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Pakistan</td>
+            <td>30</td>
+            <td>2638</td>
+            <td>88</td>
+          </tr>
+        </table>
+        
+      </section>
+
+      <button class="playersinfo" id="playersButton">Toggle Top Cricket Players</button>
+
+      <section id="players">
+        <h2>Top Cricket Players</h2>
+        <ul>
+          <li>Virat Kohli</li>
+          <li>Joe Root</li>
+          <li>Steve Smith</li>
+          <li>AB de Villiers</li>
+          <li>Kane Williamson</li>
+        </ul>
+
+      </section>
+
+      
+      <button id="change-color">Click to change color</button>
+      
+    </main>
+    
+
+    <footer>
+      <p>Copyright © 2023 Cricket World</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

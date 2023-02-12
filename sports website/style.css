@@ -1,0 +1,258 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+    font-family: helvetica;
+    background-color: #f2f2f2;
+    width: 90%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 41, 27);
+    color: #fff;
+    
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header h1 {
+      padding: 20px;
+    margin: 0;
+
+  }
+  
+  .nav {
+    display: flex;
+    /* justify-content: center; */
+    background-color: #333;
+    padding: 10px;
+    
+  }
+
+  .nav li{
+      display: inline;
+     
+  }
+
+  .nav li a:hover {
+    background-color: #111;
+    border-radius: 20px;
+  }
+  
+
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+
+  }
+
+  .maincontent{
+      padding-top: 10px;
+      padding-bottom: 100px;
+      /* padding-left: 20px;
+      padding-right: 20px; */
+  }
+
+  #about {
+    padding: 10px;
+    padding-top: 20px;
+  }
+
+  #news{
+    padding: 10px;
+    padding-top: 20px;
+  }
+
+  #teams{
+    padding: 10px;
+    padding-top: 20px;
+  }
+
+  #players{
+    padding: 10px;
+    padding-top: 20px;
+  }
+
+  #about p{
+    width: 65%;
+    padding-bottom: 80px;
+    margin-top: 20px;
+    
+  }
+
+  #about div {
+      padding-top: 50px;
+      padding-left: 20px;
+      
+  }
+  #about div h2{
+      font-size: 60px;
+      margin: 0%;
+  }
+
+  #about{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  #cricket{
+      width: 600px;
+      height: 350px;
+      border-radius: 20px;
+  }
+
+
+ button {
+   padding: 8px;
+  border-width: 1px;
+   border-radius: 4px;
+   margin-top: 20px;
+   margin-right: 20px;
+   margin-left: 10px;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   transition: background-color  500ms;
+   
+ }
+
+ button:hover{
+   background-color: cornsilk;
+   transform: scale(1.2);
+ }
+
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*for news*/
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  /* padding-top: 16px; */
+  text-align: center;
+  background-color: #f1f1f1;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
